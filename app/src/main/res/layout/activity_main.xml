@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="407dp"
+        android:layout_height="556dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="#673AB7"
+            android:text="Candidatos politicos"
+            android:textAlignment="center"
+            android:textColor="#DFA4A4"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:ems="10"
+            android:onClick="agregar"
+            android:hint="Nombre y Apellidos"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/escaños"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:ems="10"
+            android:hint="Edad"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/presidente"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:ems="10"
+            android:hint="Nivel de estudios"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/agregar"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:backgroundTint="#CDDC39"
+            android:onClick="agregar"
+            android:shadowColor="#FFEB3B"
+            android:text="Agregar lider"
+            android:textColorHighlight="#FFEB3B"
+            android:textColorLink="#FFEB3B"
+            app:rippleColor="#FFEB3B"
+            app:strokeColor="#FFEB3B"
+            app:toggleCheckedStateOnClick="false" />
+
+        <Button
+            android:id="@+id/consultar"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:backgroundTint="#9C27B0"
+            android:onClick="consultar"
+            android:text="Consultar Lider" />
+
+        <Button
+            android:id="@+id/modificar"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:backgroundTint="#4CAF50"
+            android:onClick="modificar"
+            android:text="Modificar Lider" />
+
+        <Button
+            android:id="@+id/borrar"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:backgroundTint="#009688"
+            android:onClick="borrar"
+            android:text="Borrar Lider" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="409dp"
+        android:layout_height="173dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.996">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="bottom"
+            android:backgroundTint="#FF5722"
+            android:onClick="modificarpartido"
+            android:text="Modificar Partidos Politicos"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/Cambiar"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:text="Cambiar a otra actividad"
+            android:onClick="cambiar"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
